@@ -61,9 +61,19 @@
         box-shadow: 2px 2px 3px #999;
         bottom: 40px;
         right: 10vh;
-        color: #fff;
+        color: #fc7b19;
         text-align: center;
         z-index: 100;
+        background-color: #02126a;
+      }
+      .text-war{
+        color: #fc7b19;
+      }
+      .hidden{
+        display: none;
+      }
+      .img-rounded{
+        border-radius: 50%;
       }
     </style>
   </head>
@@ -71,311 +81,257 @@
   <body>
     <!-- Modal -->
     <div class="modal offcanvas-modal fade" id="offcanvas-modal">
-      <div class="modal-dialog offcanvas-dialog">
-        <div class="modal-content">
-          <div class="modal-header offcanvas-header">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <!-- offcanvas-form-wrap start -->
-          <div class="offcanvas-form-wrap">
-            <form action="#" class="offcanvas-form position-relative">
-              <input
-                class="form-control"
-                type="text"
-                placeholder="Enter your search key ... "
-              />
-              <button class="btn btn-warning">search</button>
-            </form>
-          </div>
-          <!-- offcanvas-form-wrap end -->
-          <!-- offcanvas-menu start -->
-          <nav id="offcanvas-menu" class="offcanvas-menu">
-            <ul>
-              <li>
-                <a href="index.html">Home</a>
-                <!-- add your sub menu here -->
-              </li>
-              <!-- <li>
-                            <a href="service-details.html">Services</a>
-                        </li> -->
-              <li>
-                <a href="javascript:void(0)">Services</a>
-                <ul>
-                  <li>
-                    <a class="sub-menu-link" href="services/seo.html">SEO</a>
-                  </li>
-                  <li>
-                    <a class="sub-menu-link" href="services/google-ads-ppc.html"
-                      >Google Ads PPC</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="sub-menu-link"
-                      href="services/facebook-marketing.html"
-                      >Facebook Marketing</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="sub-menu-link"
-                      href="services/instagram-marketing.html"
-                      >Instagram Marketing</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="sub-menu-link"
-                      href="services/content-marketing.html"
-                      >Content Marketing</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="sub-menu-link"
-                      href="services/email-marketing.html"
-                      >Email Marketing</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="sub-menu-link"
-                      href="services/web-development.html"
-                      >Web Development</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- <li>
-                            <a href="javascript:void(0)">Blog</a>
-                            <ul>
-                                <li>
-                                    <a href="blog-details.html">blog details</a>
-                                </li>
-                                <li>
-                                    <a href="blog-grid-3-column.html">blog grid 3 column</a>
-                                </li>
-                                <li>
-                                    <a href="blog-left-sidebar.html">blog left sidebar</a>
-                                </li>
-                                <li>
-                                    <a href="blog-right-sidebar.html">blog right sidebar</a>
-                                </li>
-                            </ul>
-                        </li> -->
-              <li>
-                <a href="contact-us.html">Contact</a>
-              </li>
-            </ul>
-
-            <div class="offcanvas-social">
-              <ul>
-                <li>
-                  <a href="#"><i class="icofont-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="icofont-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="icofont-skype"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="icofont-linkedin"></i></a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <!-- offcanvas-menu end -->
-
-          <p class="text-gradient mt-3">Let us grow your website traffic.</p>
-        </div>
-      </div>
-    </div>
-
-    <header class="header">
-      <div class="header-top bg-primary">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col col-lg-4 d-none d-lg-block">
-              <ul
-                class="header-social-links d-flex flex-wrap align-items-center"
-              >
-                <li class="social-link-item">
-                  <a href="#" class="social-link"
-                    ><i class="icofont-facebook"></i
-                  ></a>
-                </li>
-                <li class="social-link-item">
-                  <a href="#" class="social-link"
-                    ><i class="icofont-twitter"></i
-                  ></a>
-                </li>
-                <li class="social-link-item">
-                  <a href="#" class="social-link"
-                    ><i class="icofont-skype"></i
-                  ></a>
-                </li>
-                <li class="social-link-item">
-                  <a href="#" class="social-link"
-                    ><i class="icofont-linkedin"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
-              <p class="d-flex flex-wrap align-items-center text-gradient">
-                <span class="hr-border d-none d-xl-block"></span>Let us grow
-                your business.
-              </p>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <ul
-                class="select-box d-flex flex-wrap align-items-center justify-content-center justify-content-md-end"
-              >
-                <li class="select-item">
-                  <a href="tel:919820190897"
-                    ><i class="icofont-phone mr-1"></i> +91 9820190897</a
-                  >
-                </li>
-                <!-- <li class="select-item">
-                                <select class="form-select w-auto">
-                                    <option selected>English</option>
-                                    <option value="1">Français</option>
-                                    <option value="2">English</option>
-                                    <option value="3">Français</option>
-                                </select>
-                            </li> -->
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="active-sticky" class="header-bottom">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col text-left">
-              <a href="index.html" class="brand-logo">
-                <h4 class="mb-0 text-dark">Marketing Eye</h4>
-                <p>The sacred solution for your business</p>
-                <!-- <img src="assets/images/logo/logo.png" alt="brand logo" /> -->
-              </a>
-            </div>
-            <div class="col-auto">
-              <a
-                class="btn btn-warning btn-hover-warning d-none d-sm-inline-block d-lg-none"
-                href="blog-details.html"
-                >Analyze Your Site <i class="icofont-arrow-right"></i>
-              </a>
-
+        <div class="modal-dialog offcanvas-dialog">
+          <div class="modal-content">
+            <div class="modal-header offcanvas-header">
               <button
                 type="button"
-                class="btn btn-warning offcanvas-toggler"
-                data-bs-toggle="modal"
-                data-bs-target="#offcanvas-modal"
-              >
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </button>
-              <nav class="d-none d-lg-block">
-                <ul class="main-menu text-end">
-                  <li class="main-menu-item">
-                    <a class="main-menu-link" href="index.html">Home</a>
-                  </li>
-                  <!-- <li class="main-menu-item">
-                                    <a class="main-menu-link" href="service-details.html">Services</a>
-                                </li> -->
-                  <li class="main-menu-item">
-                    <a class="main-menu-link" href="#">Services</a>
-                    <ul class="sub-menu">
-                      <li>
-                        <a class="sub-menu-link" href="services/seo.html"
-                          >SEO</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="sub-menu-link"
-                          href="services/google-ads-ppc.html"
-                          >Google Ads PPC</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="sub-menu-link"
-                          href="services/facebook-marketing.html"
-                          >Facebook Marketing</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="sub-menu-link"
-                          href="services/instagram-marketing.html"
-                          >Facebook Marketing</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="sub-menu-link"
-                          href="services/content-marketing.html"
-                          >Content Marketing</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="sub-menu-link"
-                          href="services/email-marketing.html"
-                          >Email Marketing</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="sub-menu-link"
-                          href="services/web-development.html"
-                          >Web Development</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <!-- <li class="main-menu-item">
-                                    <a class="main-menu-link" href="#">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a class="sub-menu-link" href="blog-details.html">blog details</a>
-                                        </li>
-                                        <li>
-                                            <a class="sub-menu-link" href="blog-grid-3-column.html">blog grid 3 column</a>
-                                        </li>
-                                        <li>
-                                            <a class="sub-menu-link" href="blog-left-sidebar.html">blog left sidebar</a>
-                                        </li>
-                                        <li>
-                                            <a class="sub-menu-link" href="blog-right-sidebar.html">blog right sidebar</a>
-                                        </li>
-                                    </ul>
-                                </li> -->
-                  <li class="main-menu-item">
-                    <a class="main-menu-link" href="contact-us.html"
-                      >Contacts</a
-                    >
-                  </li>
-                  <!-- <li class="main-menu-item">
-                                    <a class="btn btn-warning btn-hover-warning btn-lg" href="#">Analyze Your Site <i class="icofont-arrow-right"></i>
-                                    </a>
-                                </li> -->
-                </ul>
-              </nav>
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
+            <!-- offcanvas-form-wrap start -->
+            <!-- <div class="offcanvas-form-wrap">
+              <form action="#" class="offcanvas-form position-relative">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Enter your search key ... "
+                />
+                <button class="btn btn-warning">search</button>
+              </form>
+            </div> -->
+            <!-- offcanvas-form-wrap end -->
+            <!-- offcanvas-menu start -->
+            <nav id="offcanvas-menu" class="offcanvas-menu">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                  <!-- add your sub menu here -->
+                </li>
+                <!-- <li>
+                              <a href="service-details.html">Services</a>
+                          </li> -->
+                <li>
+                  <a href="javascript:void(0)">Services</a>
+                  <ul>
+                    <li>
+                      <a class="sub-menu-link" href="services/seo.html">SEO</a>
+                    </li>
+                    <li>
+                      <a class="sub-menu-link" href="services/google-ads-ppc.html"
+                        >Google Ads PPC</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="sub-menu-link"
+                        href="services/facebook-marketing.html"
+                        >Facebook Marketing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="sub-menu-link"
+                        href="services/instagram-marketing.html"
+                        >Instagram Marketing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="sub-menu-link"
+                        href="services/content-marketing.html"
+                        >Content Marketing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="sub-menu-link"
+                        href="services/email-marketing.html"
+                        >Email Marketing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="sub-menu-link"
+                        href="services/web-development.html"
+                        >Web Development</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- <li>
+                              <a href="javascript:void(0)">Blog</a>
+                              <ul>
+                                  <li>
+                                      <a href="blog-details.html">blog details</a>
+                                  </li>
+                                  <li>
+                                      <a href="blog-grid-3-column.html">blog grid 3 column</a>
+                                  </li>
+                                  <li>
+                                      <a href="blog-left-sidebar.html">blog left sidebar</a>
+                                  </li>
+                                  <li>
+                                      <a href="blog-right-sidebar.html">blog right sidebar</a>
+                                  </li>
+                              </ul>
+                          </li> -->
+                <li>
+                  <a href="contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                  <a href="about-us.html">About Us</a>
+                </li>
+              </ul>
+  
+              <!-- <div class="offcanvas-social">
+                <ul>
+                  <li>
+                    <a href="#"><i class="icofont-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icofont-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icofont-skype"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icofont-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div> -->
+            </nav>
+            <!-- offcanvas-menu end -->
+  
+            <p class="text-gradient mt-3">Let us grow your business.</p>
           </div>
         </div>
       </div>
-    </header>
+  
+      <header class="header">
+  
+        <div id="active-sticky" class="header-bottom pt-0 pb-0">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col text-left">
+                <a href="index.html" class="brand-logo">
+                  <!-- <h4 class="mb-0 text-dark">Marketing Eye</h4>
+                  <p>The sacred solution for your business</p> -->
+                  <img src="assets/images/logo/logo.jpg" class="logo" alt="Marketing EYE" />
+                </a>
+              </div>
+              <div class="col-auto">
+  
+                <button
+                  type="button"
+                  class="btn btn-warning offcanvas-toggler"
+                  data-bs-toggle="modal"
+                  data-bs-target="#offcanvas-modal"
+                >
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </button>
+                <nav class="d-none d-lg-block">
+                  <ul class="main-menu text-end">
+                    <li class="main-menu-item">
+                      <a class="main-menu-link" href="index.html">Home</a>
+                    </li>
+                    <!-- <li class="main-menu-item">
+                                      <a class="main-menu-link" href="service-details.html">Services</a>
+                                  </li> -->
+                    <li class="main-menu-item">
+                      <a class="main-menu-link" href="#">Services</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="sub-menu-link" href="services/seo.html"
+                            >SEO</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="sub-menu-link"
+                            href="services/google-ads-ppc.html"
+                            >Google Ads PPC</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="sub-menu-link"
+                            href="services/facebook-marketing.html"
+                            >Facebook Marketing</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="sub-menu-link"
+                            href="services/instagram-marketing.html"
+                            >Instagram Marketing</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="sub-menu-link"
+                            href="services/content-marketing.html"
+                            >Content Marketing</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="sub-menu-link"
+                            href="services/email-marketing.html"
+                            >Email Marketing</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="sub-menu-link"
+                            href="services/web-development.html"
+                            >Web Development</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- <li class="main-menu-item">
+                                      <a class="main-menu-link" href="#">Blog</a>
+                                      <ul class="sub-menu">
+                                          <li>
+                                              <a class="sub-menu-link" href="blog-details.html">blog details</a>
+                                          </li>
+                                          <li>
+                                              <a class="sub-menu-link" href="blog-grid-3-column.html">blog grid 3 column</a>
+                                          </li>
+                                          <li>
+                                              <a class="sub-menu-link" href="blog-left-sidebar.html">blog left sidebar</a>
+                                          </li>
+                                          <li>
+                                              <a class="sub-menu-link" href="blog-right-sidebar.html">blog right sidebar</a>
+                                          </li>
+                                      </ul>
+                                  </li> -->
+                    <li class="main-menu-item">
+                      <a class="main-menu-link" href="contact-us.html"
+                        >Contact Us</a
+                      >
+                    </li>
+                    <!-- <li class="main-menu-item">
+                      <a class="main-menu-link" href="about-us.html"
+                        >About Us</a
+                      >
+                    </li> -->
+                    <!-- <li class="main-menu-item">
+                                      <a class="btn btn-warning btn-hover-warning btn-lg" href="#">Analyze Your Site <i class="icofont-arrow-right"></i>
+                                      </a>
+                                  </li> -->
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
     <section class="hero-section">
       <img
@@ -393,16 +349,16 @@
         src="assets/images/hero/particle1.png"
         alt="img_not_found"
       />
-      <img
+      <!-- <img
         class="shape particle2"
         src="assets/images/hero/particle2.png"
         alt="img_not_found"
-      />
+      /> -->
       <div class="container">
         <div class="row">
           <div class="col-lg-5 col-xl-6">
             <div class="hero-content">
-              <h2 class="title">Top Ranking Your Brand New Website.</h2>
+              <h2 class="title">Let Us Grow Your Business.</h2>
               <p>
                 <span class="hr d-none d-xl-block"></span> Top rankings is
                 important for online business.
@@ -454,59 +410,8 @@
       </div>
     </section>
 
-    <!-- brand section start -->
-    <!-- <div class="brand-section section-pb-150" data-aos="fade-up" data-aos-delay="100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="brand-card brand-carousel">
-                        <p class="text-center">
-                            Trusted by <span class="text-gradient">8,980+</span> of The
-                            World's Best Organization.
-                        </p>
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                
-                                <div class="swiper-slide">
-                                    <a class="brand-before" href="#"><img src="assets/images/brand-logo/1.png" alt="images-not_found" /></a>
-                                    <a class="brand-after" href="#"><img src="assets/images/brand-logo/1.1.png" alt="images-not_found" /></a>
-                                </div>
-                                
-                                
-                                <div class="swiper-slide">
-                                    <a class="brand-before" href="#"><img src="assets/images/brand-logo/2.png" alt="images-not_found" /></a>
-                                    <a class="brand-after" href="#"><img src="assets/images/brand-logo/2.1.png" alt="images-not_found" /></a>
-                                </div>
-                                
-                                
-                                <div class="swiper-slide">
-                                    <a class="brand-before" href="#"><img src="assets/images/brand-logo/3.png" alt="images-not_found" /></a>
-                                    <a class="brand-after" href="#"><img src="assets/images/brand-logo/3.1.png" alt="images-not_found" /></a>
-                                </div>
-                                
-                                
-                                <div class="swiper-slide">
-                                    <a class="brand-before" href="#"><img src="assets/images/brand-logo/4.png" alt="images-not_found" /></a>
-                                    <a class="brand-after" href="#"><img src="assets/images/brand-logo/4.1.png" alt="images-not_found" /></a>
-                                </div>
-                                
-                                
-                                <div class="swiper-slide">
-                                    <a class="brand-before" href="#"><img src="assets/images/brand-logo/5.png" alt="images-not_found" /></a>
-                                    <a class="brand-after" href="#"><img src="assets/images/brand-logo/5.1.png" alt="images-not_found" /></a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- brand section start -->
-
     <!-- service section start -->
-    <section class="service-section section-pb-150">
+    <section class="service-section section-pb-50">
       <div class="container">
         <div class="row">
           <div class="col-12" data-aos="fade-up" data-aos-delay="200">
@@ -538,12 +443,11 @@
                 <img src="assets/images/icon/marketing.png" alt="" />
               </div>
               <div class="service-content">
-                <h4 class="title">Marketing Automation</h4>
+                <h4 class="title">Facebook Marketing</h4>
                 <p>
-                  Lorem Ipsum is simply dummy text of the ipsum has been the
-                  industry standard ever printer specimen book.
+                    Marketing EYE Digital agency creates eye-catching Facebook ad campaigns for new startups, small, medium-sized, and existing businesses.
                 </p>
-                <a href="case-details.html" class="btn btn-outline-danger"
+                <a href="services/facebook-marketing.html" class="btn btn-outline-danger"
                   >Details +</a
                 >
               </div>
@@ -567,10 +471,9 @@
               <div class="service-content">
                 <h4 class="title">SEO Consultancy</h4>
                 <p>
-                  Lorem Ipsum is simply dummy text of the ipsum has been the
-                  industry standard ever printer specimen book.
+                    Best SEO Agency in Thane on the top page of Google? Increase the number of visitors to your website?
                 </p>
-                <a href="case-details.html" class="btn btn-outline-warning"
+                <a href="services/seo.html" class="btn btn-outline-warning"
                   >Details +</a
                 >
               </div>
@@ -592,12 +495,11 @@
                 <img src="assets/images/icon/connect.png" alt="" />
               </div>
               <div class="service-content">
-                <h4 class="title">Pay Per Click Advertising</h4>
+                <h4 class="title">Google Ads PPC</h4>
                 <p>
-                  Lorem Ipsum is simply dummy text of the ipsum has been the
-                  industry standard ever printer specimen book.
+                    Google Ads PPC is a type of paid advertising approach in which an ad campaign may be launched by paying Google.
                 </p>
-                <a href="case-details.html" class="btn btn-outline-primary"
+                <a href="services/google-ads-ppc.html" class="btn btn-outline-primary"
                   >Details +</a
                 >
               </div>
@@ -619,12 +521,11 @@
                 <img src="assets/images/icon/document.png" alt="" />
               </div>
               <div class="service-content">
-                <h4 class="title">Marketing Automation</h4>
+                <h4 class="title">Instagram Marketing</h4>
                 <p>
-                  Lorem Ipsum is simply dummy text of the ipsum has been the
-                  industry standard ever printer specimen book.
+                    Instagram marketing is a strategy used by the best social media marketing organisations in India to connect brands with their target customers and advertise their products.
                 </p>
-                <a href="case-details.html" class="btn btn-outline-secondary"
+                <a href="services/instagram-marketing.html" class="btn btn-outline-secondary"
                   >Details +</a
                 >
               </div>
@@ -636,11 +537,6 @@
             data-aos="fade-up"
             data-aos-delay="1500"
           >
-            <div class="call-to-action text-center">
-              <a href="service-details.html" class="btn btn-warning"
-                >All Services <i class="icofont-rounded-double-right"></i
-              ></a>
-            </div>
           </div>
         </div>
       </div>
@@ -656,7 +552,7 @@
       />
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 my-auto">
             <div
               class="about-img-content"
               data-aos="zoom-in"
@@ -670,12 +566,6 @@
               <div class="about-content section-title primary">
                 <h5 class="sub-title">Why Choose Us?</h5>
                 <h3 class="title">We Are Trusted Digital Marketing Company.</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type scrambled.
-                </p>
                 <span class="hr-primary mt-4"></span>
               </div>
               <div class="about-object">
@@ -687,10 +577,9 @@
                     />
                   </div>
                   <div class="about-object-content">
-                    <h4 class="title">High Customer Retention Rate</h4>
+                    <h4 class="title">Innovative and enthusiastic</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing
-                      typesetting Ipsum has been the industry's standard dummy.
+                        Because of our strong passion for innovation and creativity, we are an excellent digital marketing and web development partner. We are constantly looking for new ways to increase our clients' revenue levels.
                     </p>
                   </div>
                 </div>
@@ -703,10 +592,9 @@
                     />
                   </div>
                   <div class="about-object-content">
-                    <h4 class="title">Dedicated Customer Support</h4>
+                    <h4 class="title">Excellent Return on Investment</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing
-                      typesetting Ipsum has been the industry's standard dummy.
+                        Working with us means significant cost savings for your company. All of our digital marketing and web development packages are reasonably priced. Our experts leave no stone unturned in order to maximise the value of every dollar invested in the project.
                     </p>
                   </div>
                 </div>
@@ -719,13 +607,42 @@
                     />
                   </div>
                   <div class="about-object-content">
-                    <h4 class="title">Professional Team Member</h4>
+                    <h4 class="title">Services of High Quality</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing
-                      typesetting Ipsum has been the industry's standard dummy.
+                        We provide unrivalled quality and never deliver solutions or services before thoroughly testing them. We have a strict quality control process in place to ensure that whatever we deliver meets our clients' expectations.
                     </p>
                   </div>
                 </div>
+
+                <div class="about-object-list">
+                    <div class="icon">
+                      <img
+                        src="assets/images/icon/3.png"
+                        alt="images-not_found"
+                      />
+                    </div>
+                    <div class="about-object-content">
+                      <h4 class="title">Customer Service that is Consistent</h4>
+                      <p>  
+                        We have a customer support team that works around the clock to ensure that we are in constant communication with our prospective and existing clients. This team can be contacted at any time with questions about our services and packages, to discuss new projects, or to inquire about the status of an ongoing project.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="about-object-list">
+                    <div class="icon">
+                      <img
+                        src="assets/images/icon/1.png"
+                        alt="images-not_found"
+                      />
+                    </div>
+                    <div class="about-object-content">
+                      <h4 class="title">A Variety of Services Provided Under One Roof</h4>
+                      <p>
+                        All services you may require, from website conception to internet promotion, are on our list of services. We are a full-service digital marketing firm with a wide range of services to offer. SEO, SEM, SMO, web development, CMS development, e-commerce development, and mobile app development are just a few of the services we offer.
+                      </p>
+                    </div>
+                  </div>
                 <!-- about-object-list end -->
               </div>
             </div>
@@ -735,234 +652,8 @@
     </section>
     <!-- about section end -->
 
-    <!-- working process section start -->
-    <section class="working-process-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12" data-aos="fade-up" data-aos-delay="300">
-            <div class="section-title process text-center pb-100">
-              <div class="icon">
-                <img
-                  src="assets/images/icon/pencile.png"
-                  alt="Icon_not_found"
-                />
-              </div>
-              <h3 class="title">Working Process</h3>
-              <span class="hr-secodary"></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="row working-process mb-n4">
-          <!-- working-process-list start -->
-          <div
-            class="col-lg-3 col-sm-6 working-process-list mb-4"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <img
-              class="arrow-shape"
-              src="assets/images/working/arrow-shape1.png"
-              alt="images_not_found"
-            />
-            <div class="icon">
-              <img src="assets/images/working/1.png" alt="images_not_found" />
-            </div>
-            <h4 class="title">Idea Generation</h4>
-          </div>
-          <!-- working-process-list end -->
-          <!-- working-process-list start -->
-          <div
-            class="col-lg-3 col-sm-6 working-process-list mb-4"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <img
-              class="arrow-shape"
-              src="assets/images/working/arrow-shape2.png"
-              alt="images_not_found"
-            />
-            <div class="icon">
-              <img src="assets/images/working/2.png" alt="images_not_found" />
-            </div>
-            <h4 class="title">Working Plan</h4>
-          </div>
-          <!-- working-process-list end -->
-          <!-- working-process-list start -->
-          <div
-            class="col-lg-3 col-sm-6 working-process-list mb-4"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            <img
-              class="arrow-shape"
-              src="assets/images/working/arrow-shape1.png"
-              alt="images_not_found"
-            />
-            <div class="icon">
-              <img src="assets/images/working/3.png" alt="images_not_found" />
-            </div>
-            <h4 class="title">SEO Research</h4>
-          </div>
-          <!-- working-process-list end -->
-          <!-- working-process-list start -->
-          <div
-            class="col-lg-3 col-sm-6 working-process-list mb-4"
-            data-aos="fade-up"
-            data-aos-delay="700"
-          >
-            <div class="icon">
-              <img src="assets/images/working/4.png" alt="images_not_found" />
-            </div>
-            <h4 class="title">Launch Project</h4>
-          </div>
-          <!-- working-process-list end -->
-        </div>
-      </div>
-    </section>
-    <!-- working process section end -->
-
-    <!-- case studies section start -->
-    <div class="case-studies-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
-            <div class="section-title primary text-center pb-100">
-              <div class="icon">
-                <img
-                  src="assets/images/icon/webpack.png"
-                  alt="Icon_not_found"
-                />
-              </div>
-              <h3 class="title">Some Case Studies</h3>
-              <span class="hr-secodary"></span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="case-carousel">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <!-- single slide start -->
-                  <div
-                    class="swiper-slide"
-                    data-aos="fade-up"
-                    data-aos-delay="900"
-                  >
-                    <div class="case-card">
-                      <div class="thumb">
-                        <a href="#">
-                          <img
-                            class="case-shap case-shape1"
-                            src="assets/images/case/shape1.png"
-                            alt="images_not_found"/>
-                          <img
-                            class="case-shape case-shape2"
-                            src="assets/images/case/shape2.png"
-                            alt="images_not_found"/>
-
-                          <img
-                            class="case-image"
-                            src="assets/images/case/1.png"
-                            alt="images_not_found"
-                        /></a>
-                      </div>
-                      <div class="case-content">
-                        <h3 class="title">
-                          <a href="#">Marketing Automation</a>
-                        </h3>
-                        <p>Digital Strategy / Consulting</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- single slide end -->
-                  <!-- single slide start -->
-                  <div
-                    class="swiper-slide"
-                    data-aos="fade-up"
-                    data-aos-delay="600"
-                  >
-                    <div class="case-card">
-                      <div class="thumb">
-                        <a href="#">
-                          <img
-                            class="case-shap case-shape1"
-                            src="assets/images/case/shape1.png"
-                            alt="images_not_found"/>
-                          <img
-                            class="case-shape case-shape2"
-                            src="assets/images/case/shape2.png"
-                            alt="images_not_found"/>
-
-                          <img
-                            class="case-image"
-                            src="assets/images/case/2.png"
-                            alt="images_not_found"
-                        /></a>
-                      </div>
-                      <div class="case-content">
-                        <h3 class="title">
-                          <a href="#">Marketing Automation</a>
-                        </h3>
-                        <p>Digital Strategy / Consulting</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- single slide end -->
-                  <!-- single slide start -->
-                  <div
-                    class="swiper-slide"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  >
-                    <div class="case-card">
-                      <div class="thumb">
-                        <a href="#">
-                          <img
-                            class="case-shap case-shape1"
-                            src="assets/images/case/shape1.png"
-                            alt="images_not_found"/>
-                          <img
-                            class="case-shape case-shape2"
-                            src="assets/images/case/shape2.png"
-                            alt="images_not_found"/>
-
-                          <img
-                            class="case-image"
-                            src="assets/images/case/3.png"
-                            alt="images_not_found"
-                        /></a>
-                      </div>
-                      <div class="case-content">
-                        <h3 class="title">
-                          <a href="#">Marketing Automation</a>
-                        </h3>
-                        <p>Digital Strategy / Consulting</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- single slide end -->
-                </div>
-                <!-- If we need navigation buttons -->
-                <div class="container case-carousel-navigation">
-                  <div class="case-carousel swiper-button-prev">
-                    <i class="icofont-rounded-double-left"></i>
-                  </div>
-                  <div class="case-carousel swiper-button-next">
-                    <i class="icofont-rounded-double-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- case studies section end -->
-
     <!-- team section start -->
-    <!-- <section class="team-section position-relative">
+    <section class="team-section mb-5 position-relative">
         <img class="pattern" src="assets/images/team/pattern.png" alt="images-not_found" />
         <div class="container">
             <div class="row">
@@ -981,7 +672,7 @@
                 <div class="col-lg-3 col-sm-6 mb-7" data-aos="fade-up" data-aos-delay="300">
                     <div class="team-card">
                         <div class="thumb">
-                            <img src="assets/images/team/1.png" alt="images_not_found" />
+                            <img src="assets/images/team/bipin.jpeg" class="img-rounded" alt="images_not_found" />
                             <img class="social-hover" src="assets/images/team/team-hover.png" alt="images_not_found" />
                             <ul class="team-social">
                                 <li class="team-social-item">
@@ -996,15 +687,15 @@
                             </ul>
                         </div>
                         <div class="content">
-                            <h3 class="title">Willie Mckenzie</h3>
-                            <p>Digital Strategist</p>
+                            <h3 class="title">Bipin Rakholiya</h3>
+                            <p>Founder, CEO</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-7" data-aos="fade-up" data-aos-delay="600">
                     <div class="team-card">
                         <div class="thumb">
-                            <img src="assets/images/team/2.png" alt="images_not_found" />
+                            <img src="assets/images/team/2.png" class="img-rounded" alt="images_not_found" />
                             <img class="social-hover" src="assets/images/team/team-hover.png" alt="images_not_found" />
                             <ul class="team-social">
                                 <li class="team-social-item">
@@ -1019,15 +710,15 @@
                             </ul>
                         </div>
                         <div class="content">
-                            <h3 class="title">Rosie Greene</h3>
-                            <p>Project Manager</p>
+                            <h3 class="title">Shubham Kodam</h3>
+                            <p>Web Developer</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-7" data-aos="fade-up" data-aos-delay="900">
                     <div class="team-card">
                         <div class="thumb">
-                            <img src="assets/images/team/3.png" alt="images_not_found" />
+                            <img src="assets/images/team/raveena.jpeg" class="img-rounded" alt="images_not_found" />
                             <img class="social-hover" src="assets/images/team/team-hover.png" alt="images_not_found" />
                             <ul class="team-social">
                                 <li class="team-social-item">
@@ -1042,15 +733,15 @@
                             </ul>
                         </div>
                         <div class="content">
-                            <h3 class="title">Stacey Evans</h3>
-                            <p>Ui/ux designer</p>
+                            <h3 class="title">Raveena Menezes</h3>
+                            <p>SEO Specialist</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-7" data-aos="fade-up" data-aos-delay="1200">
                     <div class="team-card">
                         <div class="thumb">
-                            <img src="assets/images/team/4.png" alt="images_not_found" />
+                            <img src="assets/images/team/hitesh.jpeg" class="img-rounded" alt="images_not_found" />
                             <img class="social-hover" src="assets/images/team/team-hover.png" alt="images_not_found" />
                             <ul class="team-social">
                                 <li class="team-social-item">
@@ -1065,18 +756,157 @@
                             </ul>
                         </div>
                         <div class="content">
-                            <h3 class="title">Marian Adams</h3>
-                            <p>seo specialist</p>
+                            <h3 class="title">Hitesh Bagwan</h3>
+                            <p>Content Creator</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- team section end -->
 
+    <!-- case studies section start -->
+    <div class="case-studies-section hidden">
+        <div class="container">
+          <div class="row">
+            <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="section-title primary text-center pb-100">
+                <div class="icon">
+                  <img
+                    src="assets/images/icon/webpack.png"
+                    alt="Icon_not_found"
+                  />
+                </div>
+                <h3 class="title">Some Case Studies</h3>
+                <span class="hr-secodary"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="case-carousel">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <!-- single slide start -->
+                    <div
+                      class="swiper-slide"
+                      data-aos="fade-up"
+                      data-aos-delay="900"
+                    >
+                      <div class="case-card">
+                        <div class="thumb">
+                          <a href="#">
+                            <img
+                              class="case-shap case-shape1"
+                              src="assets/images/case/shape1.png"
+                              alt="images_not_found"/>
+                            <img
+                              class="case-shape case-shape2"
+                              src="assets/images/case/shape2.png"
+                              alt="images_not_found"/>
+  
+                            <img
+                              class="case-image"
+                              src="assets/images/case/1.png"
+                              alt="images_not_found"
+                          /></a>
+                        </div>
+                        <div class="case-content">
+                          <h3 class="title">
+                            <a href="#">Marketing Automation</a>
+                          </h3>
+                          <p>Digital Strategy / Consulting</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single slide end -->
+                    <!-- single slide start -->
+                    <div
+                      class="swiper-slide"
+                      data-aos="fade-up"
+                      data-aos-delay="600"
+                    >
+                      <div class="case-card">
+                        <div class="thumb">
+                          <a href="#">
+                            <img
+                              class="case-shap case-shape1"
+                              src="assets/images/case/shape1.png"
+                              alt="images_not_found"/>
+                            <img
+                              class="case-shape case-shape2"
+                              src="assets/images/case/shape2.png"
+                              alt="images_not_found"/>
+  
+                            <img
+                              class="case-image"
+                              src="assets/images/case/2.png"
+                              alt="images_not_found"
+                          /></a>
+                        </div>
+                        <div class="case-content">
+                          <h3 class="title">
+                            <a href="#">Marketing Automation</a>
+                          </h3>
+                          <p>Digital Strategy / Consulting</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single slide end -->
+                    <!-- single slide start -->
+                    <div
+                      class="swiper-slide"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
+                      <div class="case-card">
+                        <div class="thumb">
+                          <a href="#">
+                            <img
+                              class="case-shap case-shape1"
+                              src="assets/images/case/shape1.png"
+                              alt="images_not_found"/>
+                            <img
+                              class="case-shape case-shape2"
+                              src="assets/images/case/shape2.png"
+                              alt="images_not_found"/>
+  
+                            <img
+                              class="case-image"
+                              src="assets/images/case/3.png"
+                              alt="images_not_found"
+                          /></a>
+                        </div>
+                        <div class="case-content">
+                          <h3 class="title">
+                            <a href="#">Marketing Automation</a>
+                          </h3>
+                          <p>Digital Strategy / Consulting</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single slide end -->
+                  </div>
+                  <!-- If we need navigation buttons -->
+                  <div class="container case-carousel-navigation">
+                    <div class="case-carousel swiper-button-prev">
+                      <i class="icofont-rounded-double-left"></i>
+                    </div>
+                    <div class="case-carousel swiper-button-next">
+                      <i class="icofont-rounded-double-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- case studies section end -->
+
     <!-- faq section start -->
-    <section class="faq-section">
+    <section class="faq-section hidden">
       <img
         src="assets/images/faq/bg.png"
         alt="images-not_found"
@@ -1219,7 +1049,7 @@
 
     <!-- testimonial section start -->
 
-    <section class="testimonial-section">
+    <section class="testimonial-section hidden">
       <div class="container">
         <div class="row">
           <div class="col-12" data-aos="fade-up" data-aos-delay="100">
@@ -1445,7 +1275,7 @@
     <!-- testimonial section end -->
 
     <!-- blog section start -->
-    <section class="blog-section">
+    <section class="blog-section hidden">
       <div class="container">
         <div class="row mb-n7">
           <div class="col-lg-6 mb-7">
@@ -1554,7 +1384,7 @@
     <a href="https://api.whatsapp.com/send?phone=919820190897" target="_blank">
       <div class="card btn-round" id="chatwithus">
         <div class="card-body pt-2 pb-2 btn-round">
-          <h4 class="text-dark title mb-0">Chat with us on</h4>
+          <h4 class="text-war mb-0">Chat with us on</h4>
           <a
             href="https://api.whatsapp.com/send?phone=919820190897"
             class="float"
